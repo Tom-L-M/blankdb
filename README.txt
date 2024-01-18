@@ -1,5 +1,8 @@
 
     A document-oriented database approach using VFileSys and namespace isolation:
+
+    To start, clone the repo, enter the directory, run 'npm install', configure the '.env' file, and then, run 'node index'.
+
     
     DATABASE STRUCTURE:
         <database>
