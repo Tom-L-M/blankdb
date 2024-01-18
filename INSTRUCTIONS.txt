@@ -1,0 +1,15 @@
+To start a new instance of this database:
+
+1. Copy this directory to somewhere else
+
+2. Configure the '.env' file to the proper port and locations
+
+3. Run 'node index.js'
+
+4. Interact with it with the browser, client (not done yet) or 'mods client-http'.
+
+To run with 'mods':
+Example command: (creates a new user 'atlas' on 'main' namespace).
+Uses the original 'user:user' credentials.
+{{AUTH}} = base64(username+":"+password)
+mods client-http http://127.0.0.1/usr/new/main/atlas -x POST -hh "Authorization: Basic {{AUTH}}" -t "{\"data\":\"AtlasPassword\"}"
